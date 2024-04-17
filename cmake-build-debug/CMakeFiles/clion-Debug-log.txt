@@ -1,0 +1,4 @@
+"/Users/callisteravix/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/callisteravix/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja -S /Users/callisteravix/Documents/Ensi/1_A/Semestre_2/Challenge-Programmation/vrooum -B /Users/callisteravix/Documents/Ensi/1_A/Semestre_2/Challenge-Programmation/vrooum/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/callisteravix/Documents/Ensi/1_A/Semestre_2/Challenge-Programmation/vrooum/cmake-build-debug
