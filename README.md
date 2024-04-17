@@ -1,92 +1,68 @@
-# Vrooum
+# Projet de Challenge de Programmation - Pilote de Formule 1
 
+## Enseignants Encadrants
+- Mr Ziad-Forrest
+- Mr Fourney
 
+## Table des Matières
+1. [Introduction](#introduction)
+2. [Outils](#outils)
+3. [Objectifs](#objectifs)
+4. [Conception](#conception)
+    - 4.1. [Idée Générale](#idée-générale)
+    - 4.2. [Description Détaillée de l'Algorithme A*](#description-détaillée-de-lalgorithme-a)
+5. [Particularités de Notre Pilote](#particularités-de-notre-pilote)
+6. [Difficultés Rencontrées](#difficultés-rencontrées)
+    - 6.1. [Les Difficultés](#les-difficultés)
+    - 6.2. [Solutions Apportées](#solutions-apportées)
+7. [Résultats et Optimisation](#résultats-et-optimisation)
+8. [Pistes d'Améliorations](#pistes-daméliorations)
+9. [Conclusion](#conclusion)
 
-## Getting started
+## Introduction
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+Le challenge proposé consistait à programmer un pilote de formule 1 évoluant sur un circuit virtuel, en communiquant avec un gestionnaire de course qui fournissait les informations sur la course et les autres pilotes. Ce rapport présente notre approche algorithmique pour résoudre ce problème ainsi que les particularités de notre pilote, les difficultés rencontrées et les solutions apportées.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+## Outils
 
-## Add your files
+Nous avons utilisé le langage C compilable sous Linux Ubuntu 20.04 LTS, Gitlab, et VisualCode Live Share pour la gestion de version et la collaboration.
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+## Objectifs
 
-```
-cd existing_repo
-git remote add origin https://gitlab.ecole.ensicaen.fr/ravix/vrooum.git
-git branch -M master
-git push -uf origin master
-```
+L'objectif principal était de programmer un pilote de formule 1 atteignant l'arrivée le plus rapidement possible tout en respectant les règles de la course. Pour atteindre cet objectif, nous avons établi différentes tâches comme l'analyse des règles de la course, la conception d'un algorithme de mouvement, son implémentation, des tests sur différents circuits, et l'optimisation du code.
 
-## Integrate with your tools
+## Conception
 
-- [ ] [Set up project integrations](https://gitlab.ecole.ensicaen.fr/ravix/vrooum/-/settings/integrations)
+### Idée Générale
 
-## Collaborate with your team
+Nous avons utilisé l'algorithme A* pour la planification de la trajectoire, prenant en compte les obstacles et la consommation de carburant. Initialement, l'algorithme était limité, mais nous l'avons étendu pour prendre en compte plusieurs paramètres comme la gestion du sable et des collisions.
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+### Description Détaillée de l'Algorithme A*
 
-## Test and Deploy
+[L'explication détaillée de l'algorithme A* est fournie dans le rapport.](#description-détaillée-de-lalgorithme-a)
 
-Use the built-in continuous integration in GitLab.
+## Particularités de Notre Pilote
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+Notre pilote se distingue par l'utilisation de l'algorithme A* pour la planification de la trajectoire, la gestion des collisions, et la planification de la consommation de carburant.
 
-***
+## Difficultés Rencontrées
 
-# Editing this README
+### Les Difficultés
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+Nous avons rencontré des défis tels que l'équilibre entre vitesse et consommation de carburant, l'optimisation du code pour répondre aux contraintes de temps et la détection des collisions.
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+### Solutions Apportées
 
-## Name
-Choose a self-explaining name for your project.
+Pour résoudre ces difficultés, nous avons ajusté notre fonction d'évaluation heuristique, optimisé notre code en utilisant des structures de données plus efficaces, et renforcé notre détection de collision.
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+## Résultats et Optimisation
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+Les résultats ont montré que notre pilote atteignait l'arrivée en un temps raisonnable, mais nous avons encore optimisé le code pour améliorer ses performances.
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+## Pistes d'Améliorations
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+Nous envisageons d'améliorer notre algorithme principal en explorant des alternatives comme l'algorithme JPS ou en régressant vers Dijkstra pour des trajectoires plus optimales. De plus, des améliorations pour gérer les virages serrés pourraient être apportées.
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+## Conclusion
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Ce projet nous a permis d'appliquer nos connaissances en algorithmique et programmation pour résoudre un problème complexe de pilotage de formule 1. Nous avons réussi à développer un pilote efficace malgré les défis rencontrés.
