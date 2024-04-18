@@ -68,3 +68,7 @@ Nous envisageons d'améliorer notre algorithme principal en explorant des altern
 ## Conclusion
 
 Ce projet nous a permis d'appliquer nos connaissances en algorithmique et programmation pour résoudre un problème complexe de pilotage de formule 1. Nous avons réussi à développer un pilote efficace malgré les défis rencontrés.
+
+## Auteurs 
+Calliste Ravix
+Clément Jantet
