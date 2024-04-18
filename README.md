@@ -1,5 +1,7 @@
 # Projet de Challenge de Programmation - Pilote de Formule 1
 
+![Notre voiture sur une course](https://github.com/Cleanz7/Picole-nationale/blob/main/raccourcis_boosts.png)
+
 ## Enseignants Encadrants
 - Mr Ziad-Forrest
 - Mr Fourney
