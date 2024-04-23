@@ -12,7 +12,6 @@
 3. [Objectifs](#objectifs)
 4. [Conception](#conception)
     - 4.1. [Idée Générale](#idée-générale)
-    - 4.2. [Description Détaillée de l'Algorithme A*](#description-détaillée-de-lalgorithme-a)
 5. [Particularités de Notre Pilote](#particularités-de-notre-pilote)
 6. [Difficultés Rencontrées](#difficultés-rencontrées)
     - 6.1. [Les Difficultés](#les-difficultés)
@@ -38,10 +37,6 @@ L'objectif principal était de programmer un pilote de formule 1 atteignant l'ar
 ### Idée Générale
 
 Nous avons utilisé l'algorithme A* pour la planification de la trajectoire, prenant en compte les obstacles et la consommation de carburant. Initialement, l'algorithme était limité, mais nous l'avons étendu pour prendre en compte plusieurs paramètres comme la gestion du sable et des collisions.
-
-### Description Détaillée de l'Algorithme A*
-
-[L'explication détaillée de l'algorithme A* est fournie dans le rapport.](#description-détaillée-de-lalgorithme-a)
 
 ## Particularités de Notre Pilote
 
